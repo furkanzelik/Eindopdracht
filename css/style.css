@@ -4,6 +4,66 @@
     
 }
 
+@keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
+
+.bg {
+  animation:slide 5s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:8s;
+}
+
+.bg3 {
+  animation-duration:8s;
+}
+
+
+
+
+.container-fluid{
+
+    background-color: #e6f7ff;
+    margin-top: 40px;
+    
+    
+
+}
+
+.blockchainheader{
+
+text-align: center;
+margin-top: 35px;
+}
+
+.blkchainimg{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-bottom: 50px;
+}
+
+.container{
+    margin: 20px;
+}
+
 body{
     background-color: white;
     font-family: 'Courier New', monospace;
@@ -206,23 +266,11 @@ button{
     text-align: center;
     padding-top: 50px;
 }
-.sprint1{
+.sprint1,.sprint2,.cmgt-dag,.ond{
     height: 30vh;
     width: 20vw; 
 }
-.sprint2{
-    height: 30vh;
-    width: 20vw;
-}
-.cmgt-dag{
-    height: 30vh;
-    width: 20vw;
-    
-}
-.ond{
-    height: 30vh;
-    width: 20vw;
-}
+
 .card-project{
     background-color: gray;
     border: 4px solid black;
